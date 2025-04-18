@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hirento.Login">
+    <ImageView fitHeight="1177.0" fitWidth="1901.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@shapelined-_JBKdviweXI-unsplash.jpg" />
+        </image>
+    </ImageView>
+
+    <!-- VBox for form positioning -->
+    <VBox fx:id="mainVBox" alignment="CENTER" layoutX="811.0" layoutY="203.0" prefHeight="516.0" prefWidth="362.0" spacing="20" style="-fx-background-color: #000000; -fx-background-radius: 10;">
+      <Label text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label text="Username" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label text="Password" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Label>
+
+        <!-- Buttons section (Login, Sign Up) -->
+        <HBox alignment="CENTER" spacing="10">
+            <Button fx:id="loginButton" onAction="#handleLogin" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Login" />
+            <Button fx:id="signUpButton" onAction="#handleSignUp" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Sign Up" />
+        </HBox>
+
+        <!-- Exit button -->
+        <Button fx:id="exitButton" onAction="#handleExit" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Exit">
+         <font>
+            <Font size="39.0" />
+         </font></Button>
+      <effect>
+         <DropShadow height="53.75" radius="34.5625" width="86.5" />
+      </effect>
+    </VBox>
+     <TextField fx:id="usernameField" layoutX="876.0" layoutY="396.0" prefHeight="27.0" prefWidth="247.0" promptText="Enter your username" style="-fx-background-color: #444444; -fx-text-fill: white; -fx-prompt-text-fill: #888888; -fx-border-color: #888888; -fx-border-radius: 5px;" />
+   <Label layoutX="10.0" layoutY="10.0" textFill="WHITE">
+      <font>
+         <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="10.0" layoutY="10.0" textFill="WHITE">
+      <font>
+         <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="passwordField" layoutX="876.0" layoutY="475.0" prefHeight="27.0" prefWidth="247.0" promptText="Enter your password" style="-fx-background-color: #444444; -fx-text-fill: white; -fx-prompt-text-fill: #888888; -fx-border-color: #888888; -fx-border-radius: 5px;" />
+   <ImageView fx:id="logo" fitHeight="238.0" fitWidth="247.0" layoutX="201.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@Cream_Black_Elegant_Monogram_Initial_Name_Logo-removebg-preview.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

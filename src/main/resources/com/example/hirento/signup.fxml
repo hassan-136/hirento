@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hirento.Signup">
+    <ImageView fitHeight="1177.0" fitWidth="1901.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@shapelined-_JBKdviweXI-unsplash.jpg" />
+        </image>
+    </ImageView>
+   <VBox fx:id="nextVBox1" alignment="CENTER" layoutX="811.0" layoutY="203.0" prefHeight="516.0" prefWidth="362.0" spacing="20" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-padding: 20; -fx-visible: true;">
+      <children>
+         <Label text="SIGN UP - Step 1" textFill="WHITE">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="43.0" />
+            </font>
+         </Label>
+         <Label text="First Name" textFill="WHITE">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="firstNameField21" promptText="Enter your first name" style="-fx-background-color: #444444; -fx-text-fill: white; -fx-prompt-text-fill: #888888; -fx-border-color: #888888; -fx-border-radius: 5px;" />
+         <Label text="Last Name" textFill="WHITE">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="lastNameField21" promptText="Enter your last name" style="-fx-background-color: #444444; -fx-text-fill: white; -fx-prompt-text-fill: #888888; -fx-border-color: #888888; -fx-border-radius: 5px;" />
+         <Label text="Username" textFill="WHITE">
+            <font>
+               <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="usernameField21" promptText="Enter username" style="-fx-background-color: #444444; -fx-text-fill: white; -fx-prompt-text-fill: #888888; -fx-border-color: #888888; -fx-border-radius: 5px;" />
+         <HBox alignment="CENTER" spacing="10">
+            <children>
+               <Button fx:id="nextButton21" onAction="#handleNext" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Next" />
+               <Button fx:id="loginButton21" onAction="#handleLogin" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Login" />
+            </children>
+         </HBox>
+         <Button fx:id="exitButton21" onAction="#handleExit" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Exit" />
+      </children>
+   </VBox>
+
+             <!-- New VBox that will appear after "Next" button (duplicate of the first VBox) -->
+    <VBox fx:id="nextVBox" alignment="CENTER" layoutX="811.0" layoutY="203.0" prefHeight="516.0" prefWidth="362.0" spacing="20" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-padding: 20; -fx-visible: false;">
+        <Label text="SIGN UP - Step 2" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="43.0" />
+            </font>
+        </Label>
+
+                 <!-- Duplicate Form labels and fields -->
+        <Label text="Password" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="firstNameField2" promptText="Enter password" style="-fx-background-color: #444444; -fx-text-fill: white; -fx-prompt-text-fill: #888888; -fx-border-color: #888888; -fx-border-radius: 5px;" />
+
+                 <Label text="Email:" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="lastNameField2" promptText="Enter email" style="-fx-background-color: #444444; -fx-text-fill: white; -fx-prompt-text-fill: #888888; -fx-border-color: #888888; -fx-border-radius: 5px;" />
+
+                 <Label text="Type:" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+            </font>
+        </Label>
+      <ListView fx:id="list" prefHeight="73.0" prefWidth="322.0" style="-fx-background-color: #444444;" />
+
+                 <!-- Next Button and Other Buttons -->
+        <HBox alignment="CENTER" spacing="10">
+            <Button fx:id="nextButton2" onAction="#handleNext" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Next" />
+            <Button fx:id="loginButton2" onAction="#handleLogin" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Login" />
+        </HBox>
+
+                 <Button fx:id="exitButton2" onAction="#handleExit" prefWidth="100" style="-fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px; -fx-background-radius: 5px;" text="Exit" />
+    </VBox>
+   <ImageView fx:id="logo" fitHeight="238.0" fitWidth="247.0" layoutX="211.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@Cream_Black_Elegant_Monogram_Initial_Name_Logo-removebg-preview.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1177.0" prefWidth="1901.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hirento.Logo">
+   <children>
+      <ImageView fitHeight="1177.0" fitWidth="1901.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shapelined-_JBKdviweXI-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo" fitHeight="281.0" fitWidth="283.0" layoutX="827.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Cream_Black_Elegant_Monogram_Initial_Name_Logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="826.0" layoutY="549.0" prefHeight="21.0" prefWidth="283.0" progress="0.0" />
+      <Label fx:id="loadingLabel" layoutX="921.0" layoutY="605.0" text="Loading...">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
